@@ -94,7 +94,7 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
                     <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
-                    <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Hotelier</span></h1>
+                    <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">TOORS.COM</span></h1>
                     <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                     <div class="row g-3 pb-4">
                         <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
@@ -153,8 +153,8 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title text-center text-primary text-uppercase">Our Rooms</h6>
-                <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Rooms</span></h1>
+                <h6 class="section-title text-center text-primary text-uppercase">Our Hotel's</h6>
+                <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Hotel</span></h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -181,7 +181,7 @@
                             </div>
                             <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                             <div class="d-flex justify-content-between">
-                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{ route('user.hotel_detail') }}">View Detail</a>
                                 <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
                             </div>
                         </div>
@@ -211,7 +211,7 @@
                             </div>
                             <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                             <div class="d-flex justify-content-between">
-                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{ route('user.hotel_detail') }}">View Detail</a>
                                 <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
                             </div>
                         </div>
@@ -241,12 +241,15 @@
                             </div>
                             <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                             <div class="d-flex justify-content-between">
-                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{ route('user.hotel_detail') }}">View Detail</a>
                                 <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="text-center">
+                <a class="btn btn-primary py-3 px-5 mt-5 wow fadeInDown" data-wow-delay="0.9s" href="{{ route('user.explore_more_hotels') }}">Explore More Hotels</a>
             </div>
         </div>
     </div>
@@ -254,7 +257,7 @@
 
 
     <!-- Video Start -->
-    <div class="container-xxl py-5 px-0 wow zoomIn" data-wow-delay="0.1s">
+    <div class="container-xxl py-3 px-0 wow zoomIn" data-wow-delay="0.1s">
         <div class="row g-0">
             <div class="col-md-6 bg-dark d-flex align-items-center">
                 <div class="p-5">

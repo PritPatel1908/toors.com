@@ -57,7 +57,7 @@
                             <a href="index.html" class="navbar-brand d-block d-lg-none">
                                 <h1 class="m-0 text-primary text-uppercase">TOORS.COM</h1>
                             </a>
-                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
@@ -76,19 +76,21 @@
                                     </div>
                                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                                 </div>
-                                @if (!Auth::user())
-                                    <a href="{{ route('login') }}" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Login / Signup<i class="fa fa-arrow-right ms-3"></i></a>
-                                @else
-                                    <div class="div d-flex">
-                                        @if(url()->current() == 'http://127.0.0.1:8000/Users/Profile')
-                                            <a href="javascript:history.back()" class="nav-item nav-link"><i class="fas fa-regular fa-arrow-left"></i> Back To Home</a>
-                                            <a href="{{ route('users.logout') }}" class="nav-item nav-link"><i class="fas fa-sign-out" aria-hidden="true"></i> Log Out</a>
-                                        @else
-                                            <a href="{{ route('user.profile') }}" class="nav-item nav-link"><i class="far fa-user"></i> {{ $user->username }}</a>
-                                            <a href="{{ route('users.logout') }}" class="nav-item nav-link"><i class="fas fa-sign-out" aria-hidden="true"></i> Log Out</a>
-                                        @endif
-                                    </div>
-                                @endif
+                                <div style="display: flex; justify-content: center;">
+                                    @if (!Auth::user())
+                                        <a href="{{ route('login') }}" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Login / Signup<i class="fa fa-arrow-right ms-3"></i></a>
+                                    @else
+                                        <div class="div d-flex">
+                                            @if(url()->current() == 'http://127.0.0.1:8000/Users/Profile')
+                                                <a href="javascript:history.back()" class="nav-item nav-link"><i class="fas fa-regular fa-arrow-left"></i> Back To Home</a>
+                                                <a href="{{ route('users.logout') }}" class="nav-item nav-link"><i class="fas fa-sign-out" aria-hidden="true"></i> Log Out</a>
+                                            @else
+                                                <a href="{{ route('user.profile') }}" class="nav-item nav-link"><i class="far fa-user"></i> {{ $user->username }}</a>
+                                                <a href="{{ route('users.logout') }}" class="nav-item nav-link"><i class="fas fa-sign-out" aria-hidden="true"></i> Log Out</a>
+                                            @endif
+                                        </div>
+                                    @endif
+                                </div>
                             </div>
                         </nav>
                     </div>
@@ -167,7 +169,8 @@
         <!-- Header End -->
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script data-cfasync="false" src="{{ asset('assets/Users/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script><script src="../../../code.jquery.com/jquery-3.4.1.min.js" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script data-cfasync="false" src="{{ asset('assets/Users/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script>
+        {{-- <script src="{{ asset('assets/Users/code.jquery.com/jquery-3.4.1.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script> --}}
         <script src="{{ asset('assets/Users/cdn.jsdelivr.net/npm/bootstrap%405.0.0/dist/js/bootstrap.bundle.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
         <script src="{{ asset('assets/Users/lib/wow/wow.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
         <script src="{{ asset('assets/Users/lib/rating/rating.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>

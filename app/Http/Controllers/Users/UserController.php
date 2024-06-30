@@ -62,4 +62,16 @@ class UserController extends Controller
         $user->save();
         return response()->json(['Success' => 'Your Profile Successfully Updated']);
     }
+
+    public function explore_more_hotels(Request $request)
+    {
+        $user = Auth::user();
+        return view('Templates.Users.more-rooms', compact('user'));
+    }
+
+    public function hotel_detail(Request $request)
+    {
+        $user = Auth::user();
+        return view('Templates.Users.room-detail', compact('user'));
+    }
 }

@@ -34,6 +34,10 @@ Route::controller(LoginSignupController::class)->group(function () {
 Route::middleware('user.auth')->group(function () {
     Route::controller(UserController::class)->group(function () {
         Route::prefix('Users/')->group(function () {
+            // Rooms
+            Route::get('MoreHotels', 'explore_more_hotels')->name('user.explore_more_hotels');
+            Route::get('HotelDetail', 'hotel_detail')->name('user.hotel_detail');
+            // Profile
             Route::get('Profile', 'user_profile')->name('user.profile');
             Route::post('Profile/Update', 'user_profile_update')->name('user.profile_update');
         });
