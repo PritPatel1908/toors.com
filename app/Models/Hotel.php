@@ -21,12 +21,20 @@ class Hotel extends Model
         'hotel_location',
         'hotel_contact_number',
         'hotel_email',
-        'hotel_services',
+        'hotel_bed_service',
+        'hotel_bath_service',
+        'hotel_wifi_service',
+        'hotel_tv_service',
+        'hotel_ac_service',
+        'hotel_laundry_service',
+        'hotel_food_service',
+        'hotel_doctor_service',
+        'hotel_room_service',
+        'hotel_gym_service',
+        'hotel_swimmining_pool_service',
         'child_allow',
         'adult_allow',
         'category_id',
         'vendor_id',
-        'created_at',
-        'updated_at'
     ];
 }

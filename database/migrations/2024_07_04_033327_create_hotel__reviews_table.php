@@ -16,8 +16,8 @@ return new class extends Migration
             $table->integer('review_rating');
             $table->longText('review_message');
             $table->longText('review_reply_message');
-            $table->foreignId('user_id')->references('id')->on('users')->cascadeOnDelete();
-            $table->foreignId('hotel_id')->references('id')->on('hotels')->cascadeOnDelete();
+            $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreignId('hotel_id')->references('id')->on('hotels')->onDelete('cascade');
             $table->timestamps();
         });
     }

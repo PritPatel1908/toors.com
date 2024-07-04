@@ -65,4 +65,16 @@ class User extends Authenticatable
             return '<img src="'.asset($this->profile_pic).'" alt="Profile Pic" class="rounded-circle" height="150" width="150">';
         }
     }
+
+    public function admin_profile_pic_get()
+    {
+        if ($this->role == 0) {
+            if ($this->profile_pic != '') {
+                return '<img src="'.asset($this->profile_pic).'" class="avatar img-fluid rounded me-1" alt="'.$this->first_name.' '.$this->last_name.'" />';
+            }
+            else {
+                return '<img src="'.asset('assets/Admin/img/avatars/avatar.jpg').'" class="avatar img-fluid rounded meme-1" alt="'.$this->first_name.' '.$this->last_name.'" />';
+            }
+        }
+    }
 }

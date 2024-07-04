@@ -40,7 +40,7 @@ class LoginSignupController extends Controller
             $user = User::where('email', $request->email)->first();
 
             if ($user->role == 0) {
-                return back()->with('error','Credentials not match.');
+                return redirect()->intended('Admin/Dashboard');
             }
             else if ($user->role == 1) {
                 $user->is_active = 1;
@@ -62,6 +62,12 @@ class LoginSignupController extends Controller
     }
 
     public function logout()
+    {
+        Auth::logout();
+        return redirect('/');
+    }
+
+    public function admin_logout()
     {
         Auth::logout();
         return redirect('/');
