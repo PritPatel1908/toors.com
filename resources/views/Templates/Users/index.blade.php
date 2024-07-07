@@ -1,7 +1,7 @@
 @php
     $currentUrl = parse_url(url()->current(), PHP_URL_SCHEME) . '://' . parse_url(url()->current(), PHP_URL_HOST) . parse_url(url()->current(), PHP_URL_PATH);
 @endphp
-@extends($currentUrl == 'http://127.0.0.1:8000' ? 'Templates.Users.user-base' : 'Templates.Users.user-base1')
+@extends($currentUrl == 'http://127.0.0.1' ? 'Templates.Users.user-base1' : 'Templates.Users.user-base')
 @section('content')
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">
