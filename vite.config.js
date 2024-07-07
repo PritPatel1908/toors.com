@@ -8,7 +8,4 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    build: {
-        outDir: 'public/', // or any other directory you prefer
-    },
 });
