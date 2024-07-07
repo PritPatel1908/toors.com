@@ -9,6 +9,7 @@
         <meta content="" name="description">
 
         <!-- Favicon -->
+        {{-- <link href="{{ asset('assets/Users/img/Toors.png') }}" rel="icon"> --}}
         <link href="{{ asset('assets/Users/img/Toors.png') }}" rel="icon">
 
         <!-- Google Web Fonts -->
