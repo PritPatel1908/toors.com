@@ -171,7 +171,7 @@
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script data-cfasync="false" src="{{ asset('assets/Users/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script>
         {{-- <script src="{{ asset('assets/Users/code.jquery.com/jquery-3.4.1.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script> --}}
-        <script src="{{ asset('assets/Users/cdn.jsdelivr.net/npm/bootstrap%405.0.0/dist/js/bootstrap.bundle.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
         <script src="{{ asset('assets/Users/lib/wow/wow.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
         <script src="{{ asset('assets/Users/lib/rating/rating.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
         <script src="{{ asset('assets/Users/lib/easing/easing.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
