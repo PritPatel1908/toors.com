@@ -25,15 +25,15 @@
 
         <!-- Libraries Stylesheet -->
 
-        <link href="{{ asset('assets/Users/lib/animate/animate.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/Users/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/Users/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" />
+        <link href="{{ asset('assets/Users/lib/animate/animate.min.css', 'https') }}" rel="stylesheet">
+        <link href="{{ asset('assets/Users/lib/owlcarousel/assets/owl.carousel.min.css', 'https') }}" rel="stylesheet">
+        <link href="{{ asset('assets/Users/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css', 'https') }}" rel="stylesheet" />
 
         <!-- Customized Bootstrap Stylesheet -->
-        <link href="{{ asset('assets/Users/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/Users/css/bootstrap.min.css', 'https') }}" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="{{ asset('assets/Users/css/style.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/Users/css/style.css', 'https') }}" rel="stylesheet">
     </head>
     <body>
         <div class="container-xxl bg-white p-0">
@@ -172,20 +172,20 @@
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script data-cfasync="false" src="{{ asset('assets/Users/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script>
         {{-- <script src="{{ asset('assets/Users/code.jquery.com/jquery-3.4.1.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script> --}}
-        <script src="{{ asset('assets/Users/cdn.jsdelivr.net/npm/bootstrap%405.0.0/dist/js/bootstrap.bundle.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
-        <script src="{{ asset('assets/Users/lib/wow/wow.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
-        <script src="{{ asset('assets/Users/lib/rating/rating.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
-        <script src="{{ asset('assets/Users/lib/easing/easing.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
-        <script src="{{ asset('assets/Users/lib/waypoints/waypoints.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
-        <script src="{{ asset('assets/Users/lib/counterup/counterup.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
-        <script src="{{ asset('assets/Users/lib/owlcarousel/owl.carousel.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
-        <script src="{{ asset('assets/Users/lib/tempusdominus/js/moment.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
-        <script src="{{ asset('assets/Users/lib/tempusdominus/js/moment-timezone.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
-        <script src="{{ asset('assets/Users/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/cdn.jsdelivr.net/npm/bootstrap%405.0.0/dist/js/bootstrap.bundle.min.js', 'https') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/wow/wow.min.js', 'https') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/rating/rating.js', 'https') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/easing/easing.min.js', 'https') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/waypoints/waypoints.min.js', 'https') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/counterup/counterup.min.js', 'https') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/owlcarousel/owl.carousel.min.js', 'https') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/tempusdominus/js/moment.min.js', 'https') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/tempusdominus/js/moment-timezone.min.js', 'https') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js', 'https') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
 
-        <script src="{{ asset('assets/Users/js/main.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
-        <script src="{{ asset('assets/Users/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="efed0310432fc24334ae7da8-|49" defer></script>
+        <script src="{{ asset('assets/Users/js/main.js', 'https') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js', 'https') }}" data-cf-settings="efed0310432fc24334ae7da8-|49" defer></script>
 
-        <script src="{{ asset('assets/Users/js/ajax.js') }}"></script>
+        <script src="{{ asset('assets/Users/js/ajax.js', 'https') }}"></script>
     </body>
 </html>
