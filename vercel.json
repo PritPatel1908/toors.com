@@ -8,14 +8,6 @@
         "src": "/(.*)",
         "dest": "/api/index.php"
     }],
-    "builds": [
-    {
-        "src": "public/index.php",
-        "use": "@vercel/php",
-        "config": {
-            "document_root": "public"
-        }
-    }],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
