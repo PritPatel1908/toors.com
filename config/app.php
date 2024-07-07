@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://toors-com.vercel.app/'),
+    'url' => env('APP_URL', 'https://toors-com.vercel.app/'),
 
     /*
     |--------------------------------------------------------------------------
