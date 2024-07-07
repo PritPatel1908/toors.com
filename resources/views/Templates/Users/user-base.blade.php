@@ -79,7 +79,7 @@
                                 </div>
                                 <div style="display: flex; justify-content: center;">
                                     @if (!Auth::user())
-                                        <a href="{{ route('login') }}" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Login / Signup<i class="fa fa-arrow-right ms-3"></i></a>
+                                        <a href="{{ route('login') }}" class="btn btn-primary rounded-0 py-4 px-md-5 d-lg-block">Login / Signup<i class="fa fa-arrow-right ms-3"></i></a>
                                     @else
                                         <div class="div d-flex">
                                             @if(url()->current() == 'https://https://toors-com.vercel.app//Users/Profile')
