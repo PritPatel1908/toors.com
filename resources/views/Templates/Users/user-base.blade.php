@@ -19,7 +19,7 @@
         <!-- Icon Font Stylesheet -->
         {{-- <link href="{{ asset('cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css') }}" rel="stylesheet"> --}}
         {{-- <link href="{{ asset('cdn.jsdelivr.net/npm/bootstrap-icons%401.4.1/font/bootstrap-icons.css') }}" rel="stylesheet"> --}}
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
         <!-- Libraries Stylesheet -->
@@ -168,22 +168,22 @@
         </div>
         <!-- Header End -->
         <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <script src="{{ asset('assets/Users/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script data-cfasync="false" src="{{ asset('assets/Users/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script>
         {{-- <script src="{{ asset('assets/Users/code.jquery.com/jquery-3.4.1.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script> --}}
-        <script src="{{ asset('assets/Users/cdn.jsdelivr.net/npm/bootstrap%405.0.0/dist/js/bootstrap.bundle.min.js') }}"></script>
-        <script src="{{ asset('assets/Users/lib/wow/wow.min.js') }}"></script>
-        <script src="{{ asset('assets/Users/lib/rating/rating.js') }}"></script>
-        <script src="{{ asset('assets/Users/lib/easing/easing.min.js') }}"></script>
-        <script src="{{ asset('assets/Users/lib/waypoints/waypoints.min.js') }}"></script>
-        <script src="{{ asset('assets/Users/lib/counterup/counterup.min.js') }}"></script>
-        <script src="{{ asset('assets/Users/lib/owlcarousel/owl.carousel.min.js') }}"></script>
-        <script src="{{ asset('assets/Users/lib/tempusdominus/js/moment.min.js') }}"></script>
-        <script src="{{ asset('assets/Users/lib/tempusdominus/js/moment-timezone.min.js') }}"></script>
-        <script src="{{ asset('assets/Users/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}"></script>
+        <script src="{{ asset('assets/Users/cdn.jsdelivr.net/npm/bootstrap%405.0.0/dist/js/bootstrap.bundle.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/wow/wow.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/rating/rating.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/easing/easing.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/waypoints/waypoints.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/counterup/counterup.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/owlcarousel/owl.carousel.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/tempusdominus/js/moment.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/tempusdominus/js/moment-timezone.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
 
-        <script src="{{ asset('assets/Users/js/main.js') }}"></script>
-        <script src="{{ asset('assets/Users/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}"></script>
+        <script src="{{ asset('assets/Users/js/main.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="{{ asset('assets/Users/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="efed0310432fc24334ae7da8-|49" defer></script>
 
         <script src="{{ asset('assets/Users/js/ajax.js') }}"></script>
     </body>
