@@ -76,12 +76,15 @@
                                     </div>
                                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                                 </div>
-                                <div style="display: flex; justify-content: center;">
+                                <div class="d-flex justify-content-center">
                                     @if (!Auth::user())
-                                        <a href="{{ route('login') }}" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Login / Signup<i class="fa fa-arrow-right ms-3"></i></a>
+                                        <a href="{{ route('login') }}" class="btn btn-primary rounded-0 py-4 px-md-5 d-lg-block">Login / Signup<i class="fa fa-arrow-right ms-3"></i></a>
                                     @else
                                         <div class="div d-flex">
                                             @if(url()->current() == 'http://127.0.0.1:8000/Users/Profile')
+                                                <a href="javascript:history.back()" class="nav-item nav-link"><i class="fas fa-regular fa-arrow-left"></i> Back To Home</a>
+                                                <a href="{{ route('users.logout') }}" class="nav-item nav-link"><i class="fas fa-sign-out" aria-hidden="true"></i> Log Out</a>
+                                            @elseif (url()->current() == 'https://toors-com.vercel.app/Users/Profile')
                                                 <a href="javascript:history.back()" class="nav-item nav-link"><i class="fas fa-regular fa-arrow-left"></i> Back To Home</a>
                                                 <a href="{{ route('users.logout') }}" class="nav-item nav-link"><i class="fas fa-sign-out" aria-hidden="true"></i> Log Out</a>
                                             @else
