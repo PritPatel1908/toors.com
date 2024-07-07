@@ -10,7 +10,7 @@
 
         <!-- Favicon -->
         {{-- <link href="{{ asset('assets/Users/img/Toors.png') }}" rel="icon"> --}}
-        <link href="{{ asset('assets/Users/img/Toors.png') }}" rel="icon">
+        <link href="public/assets/Users/img/Toors.png" rel="icon">public/assets/Users/img/Toors.png
 
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
