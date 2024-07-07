@@ -24,12 +24,12 @@
 
         <!-- Libraries Stylesheet -->
 
-        <link href="{{ asset('assets/Users/lib/animate/animate.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/Users/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/Users/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" integrity="sha512-GqP/pjlymwlPb6Vd7KmT5YbapvowpteRq9ffvufiXYZp0YpMTtR9tI6/v3U3hFi1N9MQmXum/yBfELxoY+S1Mw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" integrity="sha512-PMjWzHVtwxdq7m7GIxBot5vdxUY+5aKP9wpKtvnNBZrVv1srI8tU6xvFMzG8crLNcMj/8Xl/WWmo/oAP/40p1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- Customized Bootstrap Stylesheet -->
-        <link href="{{ asset('assets/Users/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css" integrity="sha512-NZ19NrT58XPK5sXqXnnvtf9T5kLXSzGQlVZL9taZWeTBtXoN3xIfTdxbkQh6QSoJfJgpojRqMfhyqBAAEeiXcA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- Template Stylesheet -->
         <link href="{{ asset('assets/Users/css/style.css') }}" rel="stylesheet">
@@ -171,16 +171,16 @@
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script data-cfasync="false" src="{{ asset('assets/Users/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script>
         {{-- <script src="{{ asset('assets/Users/code.jquery.com/jquery-3.4.1.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script> --}}
-        <script src="{{ asset('assets/Users/cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.bundle.min.js" integrity="sha512-Tkt/sYlAym9X81DPqqbCjU6bMl9HmsehhtxjnZu0K1TN9Ygu8h2D7jZbn59lbDNbbIG7DUukGkjKJbp/wDpKGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="{{ asset('assets/Users/lib/wow/wow.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
         <script src="{{ asset('assets/Users/lib/rating/rating.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
         <script src="{{ asset('assets/Users/lib/easing/easing.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
-        <script src="{{ asset('assets/Users/lib/waypoints/waypoints.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="{{ asset('assets/Users/lib/counterup/counterup.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
-        <script src="{{ asset('assets/Users/lib/owlcarousel/owl.carousel.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js" integrity="sha512-lo4YgiwkxsVIJ5mex2b+VHUKlInSK2pFtkGFRzHsAL64/ZO5vaiCPmdGP3qZq1h9MzZzghrpDP336ScWugUMTg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="{{ asset('assets/Users/lib/tempusdominus/js/moment.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
         <script src="{{ asset('assets/Users/lib/tempusdominus/js/moment-timezone.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
-        <script src="{{ asset('assets/Users/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js" integrity="sha512-2JBCbWoMJPH+Uj7Wq5OLub8E5edWHlTM4ar/YJkZh3plwB2INhhOC3eDoqHm1Za/ZOSksrLlURLoyXVdfQXqwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
         <script src="{{ asset('assets/Users/js/main.js') }}" type="efed0310432fc24334ae7da8-text/javascript"></script>
         <script src="{{ asset('assets/Users/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js') }}" data-cf-settings="efed0310432fc24334ae7da8-|49" defer></script>
