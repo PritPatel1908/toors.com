@@ -13,9 +13,5 @@
     {
         "src": "/(.*)",
         "dest": "/api/index.php"
-    }],
-
-    "engines": {
-        "node": "22.x"
-    }
+    }]
 }
