@@ -27,6 +27,13 @@
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "VIEW_COMPILED_PATH": "/tmp",
 
+        "DB_CONNECTION": "pgsql",
+        "DB_HOST": "127.0.0.1",
+        "DB_PORT": "5432",
+        "DB_DATABASE": "toors_com",
+        "DB_USERNAME": "postgres",
+        "DB_PASSWORD": "prit@2004",
+
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
