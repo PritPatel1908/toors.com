@@ -9,6 +9,6 @@ export default defineConfig({
         }),
     ],
     build: {
-        outDir: 'public', // or any other directory you prefer
+        outDir: 'dist', // or any other directory you prefer
     },
 });
