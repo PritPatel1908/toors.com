@@ -1,4 +1,8 @@
 @extends('Templates.Admin.admin-base')
+@php
+    $currentUrl = url()->current();
+@endphp
+@extends($currentUrl == 'http://127.0.0.1:8000/Admin/Dashboard' ? 'Templates.Admin.admin-base1' : 'Templates.Admin.admin-base')
 @section('content')
     <main class="content">
         <div class="container-fluid p-0">

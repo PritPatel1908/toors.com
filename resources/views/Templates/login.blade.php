@@ -1,21 +1,44 @@
+@php
+    $currentUrl = url()->current();
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>TOORS.COM - Tours And Travels</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+    @if ($currentUrl == 'http://127.0.0.1:8000/Login')
+        <head>
+            <meta charset="utf-8">
+            <title>TOORS.COM - Tours And Travels</title>
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+            <meta content="" name="keywords">
+            <meta content="" name="description">
 
-        <!-- Favicon -->
-        <link href="{{ asset('assets/Users/img/Toors.png') }}" rel="icon">
-        <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
-        <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
-        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-        <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
-        <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
-        <link href="{{ asset('assets/login-signup.css') }}" rel="stylesheet">
-    </head>
+            <!-- Favicon -->
+            <link href="{{ asset('assets/Users/img/Toors.png') }}" rel="icon">
+            <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
+            <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+            <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+            <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+            <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+            <link href="{{ asset('assets/login-signup.css') }}" rel="stylesheet">
+        </head>
+    @else
+        <head>
+            <meta charset="utf-8">
+            <title>TOORS.COM - Tours And Travels</title>
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+            <meta content="" name="keywords">
+            <meta content="" name="description">
+
+            <!-- Favicon -->
+            <link href="{{ asset('assets/Users/img/Toors.png', 'https') }}" rel="icon">
+            <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
+            <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+            <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+            <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+            <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+            <link href="{{ asset('assets/login-signup.css', 'https') }}" rel="stylesheet">
+        </head>
+    @endif
     <body class="login_body" onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="noBack();">
         <div class="container">
             <div class="row">
@@ -146,7 +169,10 @@
                 <a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
             </p>
         </footer> --}}
-
-        <script src="{{ asset('assets/login-signup.js') }}"></script>
+        @if ($currentUrl == 'http://127.0.0.1:8000/Login')
+            <script src="{{ asset('assets/login-signup.js') }}"></script>
+        @else
+            <script src="{{ asset('assets/login-signup.js', 'https') }}"></script>
+        @endif
     </body>
 </html>

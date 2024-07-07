@@ -1,4 +1,7 @@
-@extends('Templates.Users.user-base')
+@php
+    $currentUrl = url()->current();
+@endphp
+@extends($currentUrl == 'http://127.0.0.1:8000/Users/HotelDetail' ? 'Templates.Users.user-base1' : 'Templates.Users.user-base')
 @section('content')
     <div class="container-fluid page-header mb-5 p-0" style="background-image: url('{{ asset('assets/Users/img/carousel-2.jpg') }}');">
         <div class="container-fluid page-header-inner py-5">

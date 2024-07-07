@@ -48,13 +48,13 @@
             <div class="container-fluid bg-dark px-0 fixed-top shadow">
                 <div class="row gx-0 shadow">
                     <div class="col-lg-3 bg-dark d-none d-lg-block">
-                        <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                        <a href="{{ route('user.index') }}" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
                             <h1 class="m-0 text-primary text-uppercase">TOORS.COM</h1>
                         </a>
                     </div>
                     <div class="col-lg-9">
                         <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
-                            <a href="index.html" class="navbar-brand d-block d-lg-none">
+                            <a href="{{ route('user.index') }}" class="navbar-brand d-block d-lg-none">
                                 <h1 class="m-0 text-primary text-uppercase">TOORS.COM</h1>
                             </a>
                             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,7 +105,7 @@
                     <div class="row g-5">
                         <div class="col-md-6 col-lg-4">
                             <div class="bg-primary rounded p-4">
-                                <a href="index.html"><h1 class="text-white text-uppercase">TOORS.COM</h1></a>
+                                <a href="{{ route('user.index') }}"><h1 class="text-white text-uppercase">TOORS.COM</h1></a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
@@ -146,7 +146,7 @@
                     <div class="copyright">
                         <div class="row">
                             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                                &copy; <a class="border-bottom" href="#">TOORS.COM</a>, All Right Reserved.
+                                &copy; <a class="border-bottom" href="{{ route('user.index') }}">TOORS.COM</a>, All Right Reserved.
 
                                 <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                                 Designed By <a class="border-bottom" href="https://htmlcodex.com">Prit Patel</a>

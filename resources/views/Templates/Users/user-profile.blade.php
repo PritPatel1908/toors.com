@@ -1,4 +1,7 @@
-@extends('Templates.Users.user-base')
+@php
+    $currentUrl = url()->current();
+@endphp
+@extends($currentUrl == 'http://127.0.0.1:8000/Users/Profile' ? 'Templates.Users.user-base1' : 'Templates.Users.user-base')
 @section('content')
     <!-- About Start -->
     <div class="container-fluid mb-5 p-0">
