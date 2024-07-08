@@ -2,7 +2,7 @@
     $currentUrl = url()->current();
 @endphp
 @extends($currentUrl == 'http://127.0.0.1:8000' ? 'Templates.Users.user-base1' : 'Templates.Users.user-base') --}}
-@extends('Templates.Users.user-base1')
+@extends('Templates.Users.user-base')
 @section('content')
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">

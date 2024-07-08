@@ -17,7 +17,7 @@
         <meta name="csrf_token" content="{{ csrf_token() }}" />
 
         <link rel="preconnect" href="https://fonts.gstatic.com/">
-        <link rel="shortcut icon" href="{{ asset('assets/Users/img/Toors.png', 'https') }}" />
+        <link rel="shortcut icon" href="{{ asset('assets/Users/img/Toors.png') }}" />
 
         <link rel="canonical" href="index.html" />
 
@@ -28,13 +28,13 @@
         <!-- Choose your prefered color scheme -->
         <!-- <link href="css/light.css" rel="stylesheet"> -->
         <!-- <link href="css/dark.css" rel="stylesheet"> -->
-        <link href="{{ asset('assets/Admin/css/dark.css', 'https') }}" rel="stylesheet">
-        <link href="{{ asset('assets/Admin/css/style.css', 'https') }}" rel="stylesheet">
+        <link href="{{ asset('assets/Admin/css/dark.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/Admin/css/style.css') }}" rel="stylesheet">
 
         <!-- BEGIN SETTINGS -->
         <!-- Remove this after purchasing -->
         {{-- <link class="js-stylesheet" href="{{ asset('assets/Admin/css/light.css') }}" rel="stylesheet"> --}}
-        <script src="{{ asset('assets/Admin/js/settings.js', 'https') }}"></script>
+        <script src="{{ asset('assets/Admin/js/settings.js') }}"></script>
         <style>
             body {
                 opacity: 0;
@@ -526,7 +526,7 @@
                                         <a href="#" class="list-group-item">
                                             <div class="row g-0 align-items-center">
                                                 <div class="col-2">
-                                                    <img src="{{ asset('assets/Admin/img/avatars/avatar-5.jpg', 'https') }}"
+                                                    <img src="{{ asset('assets/Admin/img/avatars/avatar-5.jpg') }}"
                                                         class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
                                                 </div>
                                                 <div class="col-10 ps-2">
@@ -540,7 +540,7 @@
                                         <a href="#" class="list-group-item">
                                             <div class="row g-0 align-items-center">
                                                 <div class="col-2">
-                                                    <img src="{{ asset('assets/Admin/img/avatars/avatar-2.jpg', 'https') }}"
+                                                    <img src="{{ asset('assets/Admin/img/avatars/avatar-2.jpg') }}"
                                                         class="avatar img-fluid rounded-circle" alt="William Harris">
                                                 </div>
                                                 <div class="col-10 ps-2">
@@ -554,7 +554,7 @@
                                         <a href="#" class="list-group-item">
                                             <div class="row g-0 align-items-center">
                                                 <div class="col-2">
-                                                    <img src="{{ asset('assets/Admin/img/avatars/avatar-4.jpg', 'https') }}"
+                                                    <img src="{{ asset('assets/Admin/img/avatars/avatar-4.jpg') }}"
                                                         class="avatar img-fluid rounded-circle" alt="Christina Mason">
                                                 </div>
                                                 <div class="col-10 ps-2">
@@ -568,7 +568,7 @@
                                         <a href="#" class="list-group-item">
                                             <div class="row g-0 align-items-center">
                                                 <div class="col-2">
-                                                    <img src="{{ asset('assets/Admin/img/avatars/avatar-3.jpg', 'https') }}"
+                                                    <img src="{{ asset('assets/Admin/img/avatars/avatar-3.jpg') }}"
                                                         class="avatar img-fluid rounded-circle" alt="Sharon Lessman">
                                                 </div>
                                                 <div class="col-10 ps-2">
@@ -588,23 +588,23 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-flag dropdown-toggle" href="#" id="languageDropdown"
                                     data-bs-toggle="dropdown">
-                                    <img src="{{ asset('assets/Admin/img/flags/us.png', 'https') }}" alt="English" />
+                                    <img src="{{ asset('assets/Admin/img/flags/us.png') }}" alt="English" />
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
                                     <a class="dropdown-item" href="#">
-                                        <img src="{{ asset('assets/Admin/img/flags/us.png', 'https') }}" alt="English" width="20" class="align-middle me-1" />
+                                        <img src="{{ asset('assets/Admin/img/flags/us.png') }}" alt="English" width="20" class="align-middle me-1" />
                                         <span class="align-middle">English</span>
                                     </a>
                                     <a class="dropdown-item" href="#">
-                                        <img src="{{ asset('assets/Admin/img/flags/es.png', 'https') }}" alt="Spanish" width="20" class="align-middle me-1" />
+                                        <img src="{{ asset('assets/Admin/img/flags/es.png') }}" alt="Spanish" width="20" class="align-middle me-1" />
                                         <span class="align-middle">Spanish</span>
                                     </a>
                                     <a class="dropdown-item" href="#">
-                                        <img src="{{ asset('assets/Admin/img/flags/ru.png', 'https') }}" alt="Russian" width="20" class="align-middle me-1" />
+                                        <img src="{{ asset('assets/Admin/img/flags/ru.png') }}" alt="Russian" width="20" class="align-middle me-1" />
                                         <span class="align-middle">Russian</span>
                                     </a>
                                     <a class="dropdown-item" href="#">
-                                        <img src="{{ asset('assets/Admin/img/flags/de.png', 'https') }}" alt="German" width="20" class="align-middle me-1" />
+                                        <img src="{{ asset('assets/Admin/img/flags/de.png') }}" alt="German" width="20" class="align-middle me-1" />
                                         <span class="align-middle">German</span>
                                     </a>
                                 </div>
@@ -669,8 +669,8 @@
         </div>
 
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script src="{{ asset('assets/Admin/js/app.js', 'https') }}"></script>
-        <script src="{{ asset('assets/Admin/js/custom.js', 'https') }}"></script>
+        <script src="{{ asset('assets/Admin/js/app.js') }}"></script>
+        <script src="{{ asset('assets/Admin/js/custom.js') }}"></script>
 
         <script>
             document.addEventListener("DOMContentLoaded", function () {
