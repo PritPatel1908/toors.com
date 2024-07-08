@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 
 class UserController extends Controller
@@ -41,10 +42,12 @@ class UserController extends Controller
         $image = $request->file('profile_pic');
         if ($image) {
             if ($user->profile_pic) {
-                unlink($user->profile_pic);
+                // unlink($user->profile_pic);
+                Storage::delete($user->profile_pic);
             }
             $image_name = str()->random(2).rand(111,999).str()->random(2).$request->profile_pic->getClientOriginalName();
-            $image->move('images/profile_pic/',$image_name);
+            // $image->move('images/profile_pic/',$image_name);
+            $image->storeAs('public/profile_pic', $image_name);
             $image_name = 'images/profile_pic/'.$image_name;
         }
 
