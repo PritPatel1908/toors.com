@@ -26,7 +26,7 @@
                             <h3 class="pt-3 font-weight-bold">Login</h3>
                         </div>
                         <div class="panel-body p-3">
-                            <form action="{{ url(route('users.login'), [], true, 'https') }}" method="POST">
+                            <form action="{{ url(route('users.login'), [], 'https') }}" method="POST">
                                 @csrf
                                 <div class="form-group py-2">
                                     <div class="input-field">
