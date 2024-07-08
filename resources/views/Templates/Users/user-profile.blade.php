@@ -20,7 +20,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-flex flex-column align-items-center text-center">
-                                        {!! $user->profile_pic_get() !!}
+                                        <img src="{{ asset('storage/' . $user->profile_pic) }}" alt="Profile Pic" class="rounded-circle" height="150" width="150">
                                         <div class="mt-3">
                                             <h4>{{ $user->username }}</h4>
                                             <p class="text-muted font-size-sm">{{ $user->email }}</p>

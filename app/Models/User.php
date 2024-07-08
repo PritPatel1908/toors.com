@@ -59,13 +59,6 @@ class User extends Authenticatable
         ];
     }
 
-    public function profile_pic_get()
-    {
-        if ($this->profile_pic) {
-            return '<img src="'.asset($this->profile_pic).'" alt="Profile Pic" class="rounded-circle" height="150" width="150">';
-        }
-    }
-
     public function admin_profile_pic_get()
     {
         if ($this->role == 0) {
