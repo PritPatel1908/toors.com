@@ -27,10 +27,10 @@
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "VIEW_COMPILED_PATH": "/tmp",
 
-        "DB_HOST": "ep-blue-limit-a4y1u0et-pooler.us-east-1.aws.neon.tech",
+        "DB_HOST": "blue-limit-a4y1u0et.ep-blue-limit-a4y1u0et-pooler.us-east-1.aws.neon.tech",
         "DB_DATABASE": "verceldb",
         "DB_USERNAME": "default",
-        "DB_PASSWORD": "Yu0cGxWIwV6m",
+        "DB_PASSWORD": "endpoint=ep-blue-limit-a4y1u0et;Yu0cGxWIwV6m",
 
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
