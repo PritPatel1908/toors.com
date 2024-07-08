@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Middleware\ForceHttps;
 use App\Http\Middleware\UserAuthMiddleware;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
@@ -14,8 +13,7 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->alias([
-            'user.auth' => UserAuthMiddleware::class,
-            ForceHttps::class
+            'user.auth' => UserAuthMiddleware::class
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
