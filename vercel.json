@@ -17,7 +17,7 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "http://toors-com.vercel.app/",
+        "APP_URL": "https://toors-com.vercel.app/",
         "APP_KEY": "base64:8Cb5tsVvSCXdq0+8hM1iE2Kt8LeOGsNzaKH6nFJJ8aQ=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",

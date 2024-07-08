@@ -9,7 +9,7 @@
         <meta content="" name="description">
 
         <!-- Favicon -->
-        <link href="{{ asset('assets/Users/img/Toors.png') }}" rel="icon">
+        <link rel="icon" type="image/png" href="https://toors-com.vercel.app/assets/Users/img/Toors.png">
 
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
