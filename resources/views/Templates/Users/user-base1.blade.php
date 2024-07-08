@@ -1,4 +1,3 @@
-@dd(env('APP_URL'));
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,7 +9,7 @@
         <meta content="" name="description">
 
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="https://toors-com.vercel.app/assets/Users/img/Toors.png">
+        <link href="{{ asset('assets/Users/img/Toors.png') }}" rel="icon">
 
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
