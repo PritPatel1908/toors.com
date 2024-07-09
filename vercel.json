@@ -10,10 +10,6 @@
             "dest": "//public/$1"
         },
         {
-            "src": "/storage/app/public/*",
-            "dest": "storage/app/public/$1"
-        },
-        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
@@ -31,10 +27,10 @@
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "VIEW_COMPILED_PATH": "/tmp",
 
-        "DB_HOST": "52.20.107.131",
-        "DB_DATABASE": "verceldb",
-        "DB_USERNAME": "default",
-        "DB_PASSWORD": "endpoint=ep-blue-limit-a4y1u0et;Yu0cGxWIwV6m",
+        "DB_HOST": "%",
+        "DB_DATABASE": "toors.com",
+        "DB_USERNAME": "root",
+        "DB_PASSWORD": "",
 
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
