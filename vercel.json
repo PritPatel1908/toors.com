@@ -28,7 +28,7 @@
         "VIEW_COMPILED_PATH": "/tmp",
 
         "DB_CONNECTION": "pgsql",
-        "DB_HOST": "localhost",
+        "DB_HOST": "127.0.0.1",
         "DB_PORT": "5432",
         "DB_DATABASE": "toors_com",
         "DB_USERNAME": "postgres",
