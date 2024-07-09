@@ -47,7 +47,12 @@ class UserController extends Controller
             }
             $image_name = str()->random(2).rand(111,999).str()->random(2).$request->profile_pic->getClientOriginalName();
             // $image->move('images/profile_pic/',$image_name);
-            $image->storeAs('public/profile_pic', $image_name);
+            // $image->storeAs('public/profile_pic', $image_name);
+            if (env('VERCEL_ENV') === 'production') {
+                $image->storeAs('vercel', $image_name);
+            } else {
+                $image->storeAs('public/profile_pic', $image_name);
+            }
             $image_name = 'profile_pic/'.$image_name;
         }
 
