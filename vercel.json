@@ -27,7 +27,7 @@
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "VIEW_COMPILED_PATH": "/tmp",
 
-        "DB_HOST": "%",
+        "DB_HOST": "127.0.0.1",
         "DB_DATABASE": "toors.com",
         "DB_USERNAME": "root",
         "DB_PASSWORD": "",
