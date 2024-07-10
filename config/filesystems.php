@@ -44,11 +44,6 @@ return [
             'throw' => false,
         ],
 
-        'vercel' => [
-            'driver' => 'vercel',
-            'root' => storage_path(''),
-        ],
-
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),
