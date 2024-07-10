@@ -11,7 +11,8 @@
         <link href="{{ asset('assets/Users/img/Toors.png') }}" rel="icon">
         <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
         <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
-        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        {{-- <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script> --}}
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
         <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
         <link href="{{ asset('assets/login-signup.css') }}" rel="stylesheet">
@@ -39,8 +40,8 @@
                                 <div class="form-group py-1 pb-2">
                                     <div class="input-field">
                                         <input type="password" class="@error('password') is-invalid @enderror" name="password" id="password" placeholder="Password" />
-                                        <button class="btn bg-white text-muted">
-                                            <span class="far fa-eye-slash"></span>
+                                        <button type="button" class="btn bg-white text-muted" id="view_pass">
+                                            <span class="far fa-eye-slash" id="pass_eyes"></span>
                                         </button>
                                     </div>
                                 </div>

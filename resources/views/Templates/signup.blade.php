@@ -119,8 +119,8 @@
                                 <div class="form-group py-1 pb-2">
                                     <div class="input-field">
                                         <input type="password" class="@error('password') is-invalid @enderror" name="password" id="password" placeholder="Password" />
-                                        <button class="btn bg-white text-muted">
-                                            <span class="far fa-eye-slash"></span>
+                                        <button type="button" class="btn bg-white text-muted" id="view_pass">
+                                            <span class="far fa-eye-slash" id="pass_eyes"></span>
                                         </button>
                                     </div>
                                 </div>
