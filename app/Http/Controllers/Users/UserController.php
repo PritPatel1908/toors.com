@@ -46,12 +46,12 @@ class UserController extends Controller
                 Storage::disk('public')->delete($user->profile_pic);
             }
             $image_name = str()->random(2).rand(111,999).str()->random(2).$request->profile_pic->getClientOriginalName();
-            // $image->move('images/profile_pic/',$image_name);
-            // $image->storeAs('app/public/profile_pic', $image_name);
-            $contents = $image->getContent();
-            Storage::disk('public')->put('profile_pic/'.$image_name, $contents);
+            $image->move('images/profile_pic/',$image_name);
+            // $image->storeAs('public/profile_pic', $image_name);
+            // $contents = $image->getContent();
+            // Storage::put(public_path().'storage/profile_pic/'.$image_name, $contents);
             // Storage::put('public/profile_pic/'.$image_name, $contents, 'public');
-            $image_name = 'profile_pic/'.$image_name;
+            $image_name = 'images/profile_pic/'.$image_name;
         }
 
         $user->username = $request->username;

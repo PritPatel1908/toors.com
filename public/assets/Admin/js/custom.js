@@ -42,7 +42,7 @@ $(document).on('click', '#addhotel', function () {
     var child_allow = $('#child_allow').val();
     var adult_allow = $('#adult_allow').val();
     var category_id = $('#category_id').val();
-    // const imageInputs = document.querySelectorAll('#image-inputs input[type="file"]');
+    const imageInputs = document.querySelectorAll('#image-inputs input[type="file"]');
 
     var form_data = new FormData();
 
@@ -71,15 +71,15 @@ $(document).on('click', '#addhotel', function () {
     form_data.append('child_allow', child_allow);
     form_data.append('adult_allow', adult_allow);
     form_data.append('category_id', category_id);
-    // form_data.append('hotel_image', $('#hotel_image')[0].files[0]);
+    form_data.append('hotel_image', $('#hotel_image')[0].files[0]);
 
-    // imageInputs.forEach((fileInput) => {
-    //     if (fileInput.files.length > 0) {
-    //       for (let i = 0; i < fileInput.files.length; i++) {
-    //         form_data.append('hotel_images', fileInput.files[i]);
-    //       }
-    //     }
-    // });
+    imageInputs.forEach((fileInput) => {
+        if (fileInput.files.length > 0) {
+          for (let i = 0; i < fileInput.files.length; i++) {
+            form_data.append('hotel_images', fileInput.files[i]);
+          }
+        }
+    });
 
     var url = $(this).data('url');
 

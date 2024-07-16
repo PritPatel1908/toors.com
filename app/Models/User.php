@@ -59,6 +59,18 @@ class User extends Authenticatable
         ];
     }
 
+    public function user_profile_pic_get()
+    {
+        if ($this->role == 1) {
+            if ($this->profile_pic != '') {
+                return '<img src="'.asset($this->profile_pic).'" alt="'.$this->first_name.' '.$this->last_name.'" class="rounded-circle" height="150" width="150">';
+            }
+            else {
+                return '<img src="'.asset('assets/Admin/img/avatars/avatar.jpg').'" rounded-circle" height="150" width="150" alt="'.$this->first_name.' '.$this->last_name.'" />';
+            }
+        }
+    }
+
     public function admin_profile_pic_get()
     {
         if ($this->role == 0) {

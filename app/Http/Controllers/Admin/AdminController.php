@@ -4,8 +4,10 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Hotel;
+use App\Models\Hotel_Image;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
 {
@@ -44,6 +46,23 @@ class AdminController extends Controller
         $hotel->category_id = $request->category_id;
         $hotel->vendor_id = $user->id;
         $hotel->save();
+
+        $hotel_image = new Hotel_Image();
+        $hotel_image->hotel_id = $hotel->id;
+        $hotel_image->hotel_image = $request->file('hotel_image');;
+        $hotel_image->save();
+
+        if ($request->file('hotel_images')) {
+
+            $hotel_images = $request->file('hotel_images');
+
+            foreach ($hotel_images as $image) {
+                $hotel_images = new Hotel_Image();
+                $hotel_images->hotel_id = $hotel->id;
+                $hotel_images->hotel_image = $image->store('hotel_images/', 'public');
+                $hotel_images->save();
+            }
+        }
         return response()->json(['Success' => 'Your Hotel Successfully Created...']);
     }
 }
